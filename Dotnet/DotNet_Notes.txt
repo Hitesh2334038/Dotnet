@@ -1,0 +1,1533 @@
+*******************************************************************************
+Day 1 -->   
+*******************************************************************************
+
+Processor
+Mother Board
+RAM
+Hard Disk
+Cache
+
+
+Dev Test  UAT  Prod
+
+Load balancing server -- very expensive 
+
+Data Center -->
+
+3 layered architecture: "N" tier Architecture
+
+Presentation layer/ tier  - HTML / CSS/ JS +  Output is .exe 
+Business layer / tier(REST Service + http/https) Middletier Output is .dll
+Database layer / tier Output is .dll
+
+
+
+pr1   pr2
+   Bl
+   DAL
+    
+Scenario --> Ways to transfer money
+(Presentation layer)
+1 Net banking Web Application
+2 Mobile
+3 Branch
+4 ATM 
+
+
+I will create a Solution File called as ProjectName.sln
+inside it I will create 3 projects called as
+PL.csproj
+Bl.csproj
+Db.csproj
+
+
+
+3 programmers  3  modules
+
+Modules are:
+Login
+Search
+Checkout
+
+How will  you allocate work?
+
+3 PL  3 BL and 3 DL
+
+
+Scenario 1 --> 
+P1 1 PL 1 BL 1 DL = 5 days  * 3 = 15 days
+P2 1 PL 1 BL 1 DL = 5 days  * 3 = 15 days
+P3 1 PL 1 BL 1 DL = 5 days  * 3 = 15 days
+Total = 45 days
+Result = In consistant Work and no uniformity
+
+Scenario 2 -->
+P1 3 PL = 5 + 4 + 3 = 12 days
+P2 3 BL = 5 + 4 + 3 = 12 days
+P3 3 DL = 5 + 4 + 3 = 12 days
+Total = 36 days ( 9 days saved) 
+Result = consistant Work and uniformity
+
+*******************************************************************************
+
+SOA Architecture--> Service Oriented --> Expose by Business funcationality as services
+*******************************************************************************
+
+Types Of Jobs -->
+Developtment /Maintenance / Enhancements -->
+
+Web Apps
+Mobiles Apps
+
+cloud --> 2012-14
+
+dot net / java -->
+business intelligence -->datastage, informatica, cognos, MS --> ssis,ssrs, ssas, hadoop --> 2014-2016 
+
+artificial intelligence / machine learning / deep learning / neural networks/ nLP --> 2017-2019
+
+*******************************************************************************
+
+Calculate SImple interest
+
+algorithm -- >
+1  get input from user p,n,r
+2   do calculation
+3   display output
+
+pnr/100
+
+
+*******************************************************************************
+sdlc life cycle -->
+
+software developemnt
+
+1 requiremnt gathering / analysis
+2 design(high and low level)
+3 coding
+4 testing
+5 deployment  (devops) 
+6 mainteance
+
+application is live and users use it.
+
+
+Enviorments  -->
+
+Dev, test, qa, prod
+
+
+Testing -->
+
+unit testing( developes)
+integration & system testing (Testers) --> manual testing and automation testing (selenium)
+uat ( business users)
+
+
+*******************************************************************************
+BY Year 1991 -->
+Microsoft HAD
+OFFICE
+WINDOWS OS
+SQL SERVER
+PROGRAMMING LANGUAGES LIKE VB AND VC++ COMPONENT BASED LANGUAGES
+Web based programming was possible because of ASP(active Server Pages) 
+Editor called as Visual Studio
+
+By year 1996 --> Java became famous which was OOPS Language
+and vb 6.0 and vc++ 6.0 was in market
+
+By 1997 --> Microsoft was loosing the market becasue of issues with VB and VC++ and no OOPS language.
+
+1999 - 2000 -->
+MicrosOft Created a new framework called as .net and also a new language called as c#.  They also migrated  Vb to vb.net and vc++ to vc++.net
+
+*******************************************************************************
+A mainframe --> 
+Adv -  speed, security.
+Dis Adv --> High cost, no GUI
+
+B Distributed --> GUi, cheap hardware, install teh software
+Adv - performance systems
+Dis Adv --> updates, securtiy
+
+
+C Web Based application -->you control teh server and deploy the app in the web server
+
+Adv - updates, securtiy
+Dis Adv --> bandwidth,not able to use cpu
+
+D --> Mobile --> Distributed + Web
+
+E --> Cloud computing --> pay as you use
+
+
+Data  center -->
+web servers --> iis
+jboss, tomcat, webshpere etc
+
+storage space and database
+
+Data center --> Dis adv
+Ramp up an ramp down was late
+Expensive
+
+https://www.bmc.com/blogs/saas-vs-paas-vs-iaas-whats-the-difference-and-how-to-choose/
+
+*******************************************************************************
+Day 2 --> 
+*******************************************************************************
+
+Serialize the data or use database to save teh state of Data.
+
+Serialization is the process of converting an object into a stream of bytes to store the object or transmit it to memory, a database, or a file. Its main purpose is to save the state of an object in order to be able to recreate it when needed. The reverse process is called deserialization.
+
+Binary
+XML
+
+
+Normalization -->
+
+tablename:- ticketreservation: fromstation, tostation, date, classes 
+tablename:- bookedticket: trainno., fromstation, tostation, date, status, classes, pnrno., date
+tablename:- cancelledticket: trainno, date, fromstation, tostation, pnr
+tablename:- passengerdetails:trainno, passenger_name, passenger_age,gender, phonenumber, emailid
+
+table 1 - userdetails
+userid(pk)
+username
+password
+mobileno
+emailid
+
+table2  traininfo
+trainno(pk)
+trainname
+
+
+table3  ticketheader
+ticketid(pk) or pnrNo
+trainno(fK)
+dateofjourney
+fromstation
+tostation
+class
+status
+istatkal
+ticketamount
+paidby
+
+table4  ticketdetails
+ticketdetailsid(pk)
+ticketid(fk)
+passenger1_name
+passenger1_age
+passenger1_gender
+passenger1_prooftype
+passenger1_proofdetails
+passenger1_berthpreference
+ispassengerseniorcitizen
+
+
+datawarehousing / datalake  
+Data warehousing is the process of constructing and using a data warehouse. A data warehouse is constructed by integrating data from multiple heterogeneous sources that support analytical reporting, structured and/or ad hoc queries, and decision making
+
+
+Business Intelligence
+integration --> ETL  extract Transform and Load  SSIS ( sql server)
+Analysis   SSAS
+reporting  SSRS
+
+Big Data
+
+Windows os  98 
+
+Client   server
+XP	 Server 2000
+ME	 Server 2003	
+VIsta    Server 2008
+7  	 Server 2008R2
+8	 Server 2013
+8.1      Server 2013R2
+10       Server 2016
+
+Home  
+Basic  
+Professional  
+Enterprise
+Ultimate
+
+Languages in Dot Net -->
+VB.Net, Vc++.Net, C#.net and F#.net
+
+Types of Programming -->
+https://en.wikipedia.org/wiki/List_of_programming_languages_by_type
+
+Procedural programming
+Component Based Languages - VB and VC++
+Object Oriented 
+Functional languages
+
+Classification of Programming Languages -->
+1-->Procedural Languages --> Pascal, cobol, Fortran, Basic --> Use goto
+line1
+line2
+line2000
+2-->Structured --> Methods and functions. C Goto functions scope is restricted
+3-->Component --> VB and VC++ 
+4-->Object Oriented --> Java, C#
+
+
+Functional Language --> Mainly Manthamatical and scientific programming
+eg LISP, F# from Microsoft.net and Scala from Java
+
+Functional and OOPS --> F# from Microsoft.net and Scala from Java
+
+
+Static languages and Dynamic Languages -->
+OR
+Compile  time Language and Run time Language -->
+
+A dynamic language (Lisp, Perl, Python, Ruby,javascript) is designed to optimize programmer efficiency, so you can implement functionality with less code. A static language (C, C++, Java, C# etc) is designed to optimize hardware efficiency, so that the code you write executes as quickly as possible.
+
+
+static typed languages are those in which type checking is done at compile-time, whereas dynamic typed languages are those in which type checking is done at run-time
+
+
+Librarymanagement System -->Structured 
+public static void Main()
+{
+//get input to user
+//do processing
+//display output to user
+}
+
+OOPS --> Librarymanagement System
+class bookcatalog
+class user
+class  UI Pages / Functionalities 
+
+*******************************************************************************
+
+SOA  ( Business Layer) 
+Service-oriented architecture (SOA) is a style of software design where services are provided to the other components by application components, through a communication protocol over a network. The basic principles of service-oriented architecture are independent of vendors, products and technologies.
+
+Web services --> SOAP protocoal
+A Web service is a software service used to communicate between two devices on a network. More specifically, a Web service is a software application with a standardized way of providing interoperability between disparate applications. It does so over HTTP using technologies such as XML, SOAP, WSDL, and UDDI
+
+
+RESTful Web Services / REST API -->
+REST stands for REpresentational State Transfer. REST is used to build web services that are lightweight, maintainable, and scalable in nature. More and more applications are moving to the Restful architecture
+
+
+Port numbers range from 0 to 65535, but only port numbers 0 to 1023 are reserved for privileged services and designated as well-known ports.
+
+
+
+
+Types of applications -->
+1 Console Apps --> dos mode // Presentation layer
+2 Windows Forms app --> GUI // Presentation layer
+3 Windows Service --> program  which runs in background and NO UI.. DO bulk processing by invoking sp in db. 
+4 Class Library // BL and data layer // no UI. Set of functions.
+5 Web Application // Presentation Layer  asp.net or .aspx
+5 Web Service / Rest Service // BL and data layer // no UI. Set of functions.
+6 Mobile Apps // Presentation layer
+7 Cloud Apps // Web based apps
+8 BI apps --> Reporting, ETL(extract, transform, load), ANalysis
+9 Office Plugin
+
+A data lake is a storage repository that holds a vast amount of raw data in its native format until it is needed. While a hierarchical data warehouse stores data in files or folders, a data lake uses a flat architecture to store data.
+
+
+data warehouse -->
+a large store of data accumulated from a wide range of sources within a company and used to guide management decisions.
+
+
+RULES of XML -->
+1 root
+all openeing tag must have a closing tag
+nesting must be proper
+case sensitive
+
+
+c1  notepad  chrome  calcualtor   c1
+
+c2  visualstudio sqlserver  c2  c3
+
+.NET  FRAMEWORK -->
+A programming infrastructure created by Microsoft for building, deploying, and running applications and services that use .NET technologies, such as desktop applications and Web services
+
+.NET Framework (pronounced dot net) is a software framework developed by Microsoft that runs primarily on Microsoft Windows. It includes a large class library named Framework Class Library (FCL) and provides language interoperability (each language can use code written in other languages) 
+
+2 COMPONENTS
+
+CLR - COMMON LANGUAGE RUNTIME
+CL OR BCL OR FCL - CLASS LIBRARY OR BASE CLASS LIBRARY   OR FRAMEWORK CLASS LIBRARY 
+
+
+compiler and other tools such as ildasm etc are not a part of framework
+
+.Net framework --> 
+CLR -  Common Language Runtime
+FCL -  Framework Class Library or Class Library or Base Class Library
+
+*******************************************************************************
+
+top 10 responsibility of Clr -->
+1 class loader of MSIL
+2 Class Loader of BCL
+3 Creation of DS
+4 GC
+5 Exception Handling
+6 Debudgging
+7 Threading
+8 JIT Compilation
+9 Type Checking
+10 Code Access Security
+
+
+HEAP SIZE IS  300
+
+Gen0 - 100
+Gen1 - 100
+Gen2 - 100
+
+I have a loop which creates 10 objects. User created objects are saved in gen0.
+
+if()
+{
+code to create 10 objects
+GC.Collect(); // last line of if block you manually invoke GC
+}
+Object c  = new Object();
+
+
+Compiled(static) vs Interpreted (dynamic) Language -->
+
+progrAM --> compiler --> intermediate language 0r byte code or assembly or .exe or .dll
+
+
+devenv.exe --> launch visual studio   (developer environment)
+
+ildasm.exe --> il intermediate language
+dasm --> dis assembler 
+
+
+
+windows process --> avengers.exe  3.7mb 
+1 main thread
+1 address 
+clr
+10kb msil code
+mb's of CL OR BCL OR FCL
+datastructures
+
+
+Version Control Softwares --> TFS / VSS/ SVC /  Git
+Check Out a File --> The file gets locked to my userid
+Till the user checkes in the file no one can check out.
+
+
+*******************************************************************************
+Day 3 --> 
+*******************************************************************************
+OOPS --> Object 
+
+Class  contains -->
+Variables / Members 
+Methods / Functions
+Events
+
+Textbox --> class 
+
+
+CDAC Leave Management System -->
+public class LeaveMgt
+{
+int LeaveMgtid;p
+int EmployeeId;
+string LeaveStatus;
+int NoOfDaysLeaveApplied;
+date StateDate;
+date EndDAte;
+string comments;
+
+ApplyLeave();
+CancelLeave();
+MAnageLeave();
+
+}
+
+
+When you click a exe a windows process gets generated. Process Contains
+1  load the clr because the program is written in .net
+2 program and bcl or fcl or cl
+3 data structures  stack, queue, list
+
+
+Functions of CLR -->
+
+		Object -->
+Value types             Reference types 
+Primitive Datatype      Complex Datatype
+stack			Heap
+struct			class
+memory manegement is 
+cheaper and faster	expensive
+int, bool,Char,enum
+dont use new		new
+
+Managed Code --> c# Code which targets CLR
+CLR takes care of memory cleanup.
+
+Un Managed Code -->c# Code which doesn't targets CLR.
+File operation, Stream and Database
+
+We must take care of memory cleanup
+
+Object.Close();
+object.Dispose();
+
+IDisposable  -->any class which inherits from this interface must be  handled by the user.
+
+ //method 1
+            StreamReader ss = new StreamReader("");
+            //some code here
+            ss.Close();
+            ss.Dispose();
+
+            //method 2
+            using(StreamReader s1 = new StreamReader(""))
+            {
+                //some code here
+            }
+
+
+Reflection -->
+Reflection allows inspection of classes, interfaces, fields and methods at runtime without knowing the names of the interfaces, fields, methods at compile time. It also allows instantiation of new objects and invocation of methods.
+
+In C# reflection invariably starts with:
+
+myInstance.GetType();
+Or:
+typeof(Class Name);
+
+
+
+
+user         web server      db server
+			     SP in db server
+
+
+*******************************************************************************
+Day 4  --> 
+*******************************************************************************
+C# Pointer is a variable that holds memory address of another type.
+C# supports pointers in a limited extent. 
+A C# pointer is nothing but a variable that holds the memory address 
+of another type. But in C# pointer can only be declared to hold the
+ memory address of value types and arrays
+
+
+
+Delegates -->
+A delegate in C# is similar to a function pointer in C or C++. 
+Using a delegate allows the programmer to encapsulate a reference 
+to a method inside a delegate object. The delegate object can then 
+be passed to code which can call the referenced method, 
+without having to know at compile time which method will be invoked.
+Event Handling is done with the help of Delegates
+
+
+****************************************************
+The opposite of lazy loading is eager loading.
+
+Eager evaluation. In computer programming, eager evaluation, also known as strict evaluation or greedy evaluation, is the evaluation strategy used by most traditional programming languages. In eager evaluation, an expression is evaluated as soon as it is bound to a variable.
+
+
+Lazy evaluation. In programming language theory, lazy evaluation, or call-by-need is an evaluation strategy which delays the evaluation of an expression until its value is needed (non-strict evaluation) and which also avoids repeated evaluations (sharing).
+
+LINQ follows Lazy Evaluation.
+
+****************************************************
+ActiveX Data Objects.
+ADO.NET is a set of classes that expose data access services for .NET Framework programmers. ADO.NET provides a rich set of components for creating distributed, data-sharing applications. It is an integral part of the .NET Framework, providing access to relational, XML, and application data
+
+
+In software engineering, a connection pool is a cache of database connections maintained so that the connections can be reused when future requests to the database are required. Connection pools are used to enhance the performance of executing commands on a database.
+
+this connection pool is maintained by ADO.NET and is used to communicate with SQL Server. The benefit of connection pooling, is that connections placed in the pool and are used over again so that a new connection does not have to be established, reducing amount of time needed to establish connections.
+
+100                         32767
+Web Server                  Sql Server / Db server
+(Connection Pooling is 
+manatained by ado.net)
+
+For insert, Update and delete Table/Row locking is needed.
+select  we can use dirty read
+
+SET TRANSACTION ISOLATION LEVEL
+    { READ UNCOMMITTED
+    | READ COMMITTED
+    | REPEATABLE READ
+    | SNAPSHOT
+    | SERIALIZABLE
+    }
+
+
+
+DataType in .Net -->
+Object is  root Datatype
+Memory allocation and deallcoation ( Garbage collection) 
+
+data structures -->stack, queue, linkedlist, dictionary or  hashtable, heap
+
+Value Type  			Refrence Type
+stack				heap( contiguous block of memory)
+struct				class
+primitive datatypes		complex datatypes
+(int,char,boolean, enum,)       string etc
+stack operation is cheaper	expensive
+default is 0			default is null
+
+Managed Code vs unmanaged Code -->
+Code which targets the clr is called as managed code.
+code which does not target the clr is  unmanaged code.
+eg of unmanaged code is --> file operations, stream operations, database operations
+all classes which inherits from interface IDisposable results in unmanaged code and we need to invoke the close and dispose method.
+
+
+	    // manual Memory Management
+            StreamReader sr = new StreamReader("");
+            sr.Close();
+            sr.Dispose();
+
+automatic memory management
+
+ 	    using(StreamReader sr1 = new StreamReader(""))
+            {
+
+            }
+
+Namespaces --> Logical grouping of classes
+the geenric syntax is
+
+CompanyName.DepartmentName.ProjectNAme.ModuleName
+
+CDAC.DAC.LibraryManagementSym.Login
+
+An assembly is a file that is automatically generated by the compiler upon successful compilation of every .NET application. It can be either a Dynamic Link Library or an executable file. It is generated only once for an application and upon each subsequent compilation the assembly gets updated.
+
+The Output of .Net compilation is called as Assembly. It is in the form of .exe or .dll
+The asembly contains Metadata + MSIL
+
+
+Types Of Assembly
+
+Static( compilation time) Vs dynamic(we will not cover) assembly created during run time.
+exe vs dll
+Private vs Public or Shared assembly( by default all .net BAse class library is present as shared or public assembly in GAC( global assembly cache)
+
+
+What is a strong name?
+A strong name consists of the assembly's identity—its simple text name, version number, and culture information (if provided)—plus a public key and a digital signature. It is generated from an assembly file using the corresponding private key. 
+
+
+GACUTil.exe
+Sn.exe --> create a strong name for my assembly
+
+
+Steps to convert private assembly to Public or Shared assembly.
+Or steps to put the Assembly or dll in GAC.
+
+1 Create 
+ Strong name using SN.exe
+sn -k FirstPublicAssembly.snk
+2 Sign the provate assembly with the SNk created.
+3 USe gacutil tool to move the provate assembly to public.
+
+C:\>gacutil.exe -i BLorDAL.dll
+
+Class contains --> properties or local variables and methods  or functions. 
+At class level or Scope we can create variables or properties and also define or initialise objects.
+
+Only in Methods or functions we can use the objects to do some processing and also write  logic.
+
+In presentation layer some functions become events.  and Event Handling is done with the help of delegates.
+
+
+database  
+There are four types of SQL Commands which can be classified as:
+
+dml data manipulation language - insert update delete select 
+tcl transaction control lang -  savepoint commit rollback
+
+
+ddl data definition lang -  create truncate drop alter
+dcl data control lang -  grant revoke
+
+DQL(Data Query Language) - SELECT  --> used rarely
+
+
+how many  times and who executes it -->
+dml + tcl --> "N" by users
+ddl - once by database administrators
+dcl - once  by database administrators
+
+dml + tcl  is only invoked from front end through c# or Java or python etc
+
+dml (100%)
+select - 90
+update - 7 
+insert - 3
+delete - 0
+
+
+DDL  Create Alter Drop Truncate   (dba)
+DML  Select Update Insert Delete  (Users)
+DCL  Grant Revoke		  (dba)
+TCL  savepoint Commit Rollback     (dba)
+
+From C# or any other prog language you only invoke  DML + TCL
+CRUD =  DML
+Create Retrive Update Delete = UI
+Insert Select  Update Delete = DML
+Whats is the % of 
+C - 5
+R - 90
+U - 4
+D - 1
+
+IRCTC 
+Amazon 
+
+Joins
+Types of Join -->
+Inner J
+oin
+Outer Join(left, right)
+Cross Join
+Self Join
+
+Inner Join  --> 
+select * from t1 inner join t2 on t1.cond = t2.cond
+select * from t1,t2 where t1.cond = t2.cond
+
+example of DML + TCL -->
+CREATE PROCEDURE UpdateLMSUserInfo
+@number int
+AS
+BEGIN
+	BEGIN TRY  
+     declare @result int
+     begin tran
+     
+     --operation1
+     UPDATE [LMS].[dbo].[LibraryUser]
+		SET [mobilenumber] = '123456789'
+		WHERE  libraryuserid=110
+       
+       --operation2
+       SET @result = 75 / @number
+       select @result
+ 
+		commit 
+	END TRY  
+	BEGIN CATCH  
+		SELECT ERROR_MESSAGE() AS ErrorMessage;
+		rollback 
+	END CATCH  
+END
+GO
+
+ACID Properties. A transaction is a very small unit of a program and it may contain several lowlevel tasks. A transaction in a database system must maintain Atomicity, Consistency, Isolation, and Durability - commonly known as ACID properties - in order to ensure accuracy, completeness, and data integrity.
+
+
+Preprocessor Statements -->
+
+In C# the preprocessor directives are used to help in 
+conditional compilation.
+
+1 	
+
+#define
+
+It defines a sequence of characters, called symbol.
+2 	
+
+#undef
+
+It allows you to undefine a symbol.
+3 	
+
+#if
+
+It allows testing a symbol or symbols to see if they evaluate to true.
+4 	
+
+#else
+
+It allows to create a compound conditional directive, along with #if.
+5 	
+
+#elif
+
+It allows creating a compound conditional directive.
+6 	
+
+#endif
+
+Specifies the end of a conditional directive.
+7 	
+
+#line
+
+It lets you modify the compiler's line number and (optionally) the file name output for errors and warnings.
+8 	
+
+#error
+
+It allows generating an error from a specific location in your code.
+9 	
+
+#warning
+
+It allows generating a level one warning from a specific location in your code.
+10 	
+
+#region
+
+It lets you specify a block of code that you can expand or collapse when using the outlining feature of the Visual Studio Code Editor.
+11 	
+
+#endregion
+
+It marks the end of a #region block.
+
+
+
+*******************************************************************************
+Day 5 --> 
+*******************************************************************************
+
+
+inheritance vc composition
+
+
+interface, static and abstract
+
+abstract class -  we inherit . No objects can be created
+sealed - we cant inherit. objects can be created
+
+
+
+To Persist info  we use serialization or save the info to db.
+
+
+
+accessmodifiers opt  class  classname  4
+
+opt - sealed / abstract / static
+
+accessmodifiers opt  returntype functionname    4
+opt - abstract/virtual/static 
+
+
+Pass by Value -  we copy the  value
+Pass By Refrence -  we pass the address
+
+C# Features -->
+
+
+n C#, a const keyword is used to declare constant fields and constant local. The value of the constant field is the same throughout the program or in other words, once the constant field is assigned the value of this field is not be changed.
+
+readonly indicates that assignment to the field can only occur as part of the declaration or in a constructor in the same class. A readonly field can be assigned and reassigned multiple times within the field declaration and constructor.
+
+
+
+
+    public class Employee
+    {
+      public int empid;
+      public string empname;
+    }
+
+
+A static variable is declared with the help of static keyword. When a variable is declared as static, then a single copy of the variable is created and shared among all objects at the class level. Static variables are accessed with the name of the class, they do not require any object for access.
+
+
+anonymous method was introduced in C# 2.0. An anonymous method is inline unnamed method in the code. It is created using the delegate keyword and doesn't required name and return type. Hence we can say, an anonymous method has only body without name, optional parameters and return type.
+
+Anonymous type, as the name suggests, is a type that doesn't have any name. C# allows you to create an object with the new keyword without defining its class. The implicitly typed variable- var is used to hold the reference of anonymous types.
+
+A lambda expression is an anonymous function that you can use to create delegates or expression tree types. By using lambda expressions, you can write local functions that can be passed as arguments or returned as the value of function calls
+
+An anonymous function is an "inline" statement or expression that can be used wherever a delegate type is expected. You can use it to initialize a named delegate or pass it instead of a named delegate type as a method parameter.
+
+The C# 3.0 version brought the following new features to the language:
+Implicitly typed variables. --> var
+Automatic properties. (prop tab tab)
+Anonymous types.
+Lambda expressions ( used to create delegates)
+
+
+Task Parallel Library (TPL)  Task-based Asynchronous Programming
+C# async and await programming model   C# 5.0
+
+Parallel processing cannot be done on loops where the output of previous step in used. It is good for independant operations.
+
+
+# Dynamic Type: C# 4.0 (.NET 4.5) introduced a new type that avoids compile time type checking. You have learned about the implicitly typed variable- var in the previous section where the compiler assigns a specific type based on the value of the expression. ... A dynamic type can be defined using the dynamic keyword
+
+Object & collection initializers.
+
+Extension Methods in C# Extension methods enable you to add methods to existing types without creating a new derived type, recompiling, or otherwise modifying the original type. An extension method is a special kind of static method, but they are called as if they were instance methods on the extended type.
+
++
+
+Query expression-> LINQ Language Integrated Query
+Language-Integrated Query (LINQ) is a powerful query language introduced with .Net 3.5
+
+LINQ stands for Language Integrated Query. LINQ is a data querying methodology which provides querying capabilities to .NET languages with a syntax similar to a SQL query
+
+LINQ has a great power of querying on any source of data. The data source could be collections of objects, database or XML files.
+
+Sql Query --> 
+select  top 10 * from tn   join where  order by group by 
+
+  		       var res3 = from obj in l1
+			where
+                        orderby  obj
+                        select obj;
+
+aaa@aaa.com
+
+asasas@sadasd..hh
+
+Types Of LINQ -->
+Linq to Collection
+Linq to Object
+Linq to SQl
+Linq to Dataset
+Linq to XML
+
+
+Named and optional Parameters :
+Named and optional arguments enable you to omit the argument for an optional parameter if you do not want to change the parameter's default value.
+
+
+Readonly Variables & Constants:
+ReadOnly :The value will be initialized only once from the constructor of the class. The difference is that the value of a static readonly field is set at run time, so it can have a different value for different executions of the program. However, the value of a const field is set to a compile time constant.
+
+Properties:
+A property is a member that provides a flexible mechanism to read, write, or compute the value of a private field. Properties can be used as if they are public data members, but they are actually special methods called accessors.
+
+string is Immutable.
+An immutable type, in the context of C#, is a type of object whose data cannot be changed after its creation. An immutable type sets the property or state of the object as read only because it cannot be modified after it is assigned during initialization.
+
+C# - Regular Expressions. A regular expression is a pattern that could be matched against an input text. The .Net framework provides a regular expression engine that allows such matching.
+
+*******************************************************************************
+Day 6 --> 
+*******************************************************************************
+
+Concurrency and Parallelism -->
+
+2 Cores
+
+6 processes are running
+windows os  - 1 Core  		300S
+Chrome      - 1 Core   		300S
+Calc application 2 - 1 Core     400S
+
+IE Browser  - 2 Core            300S
+Notepad   - 2 Core    		300S
+calc application 1- 2 Core  	400S
+
+at some instance
+Core 1       2
+WinOS        Calc1
+Chrome       IE 
+Calc2        Notepad
+				C2   C2
+Calc 1 is running like C1 C1 C1 wait wait C1 C1
+Calc 2    C2 wait wait C2 C2                             
+
+
+Parallelism
+6 -> 
+W C C1 C1 C1 C1
+Ie No C2 C2 C2 C2
+Parallelism Parallelism means that an application splits its tasks up into smaller subtasks which can be processed in parallel, for instance on multiple CPUs at the exact same time. concurrency is related to how an application handles multiple tasks it works on.
+Parallel.For and Parallel.Foreach
+
+
+
+Concurrency is not parallelism. ... But when people hear the word concurrency they often think of parallelism, a related but quite distinct concept. In programming, concurrency is the composition of independently executing processes, while parallelism is the simultaneous execution of (possibly related) computations.
+Async and Await
+
+
+
+4 threads  t1  t2 t3 t4
+2 cores    c1 c2
+
+Parallelism -->
+t1 and t3 - c1    250ms t1
+t2 and t4 - c2
+
+c1    t1 n1 t3 f1
+
+for (int counter = 1; counter <= 10; counter++)
+            {
+                FindFactorialWithSimulatedDelay(counter);
+            }
+
+Parallel.For(1, 10,
+                  counter =>
+                  {
+                      FindFactorialWithSimulatedDelay(counter);
+                  });
+
+// use cases for parallelism -->
+book a ticket
+1 get search params
+2 user selects the mode of travel
+3 get passenger info
+4 make payment
+5 book ticket
+
+
+*******************************************************************************
+Day 7 --> 
+*******************************************************************************
+
+what are objects in database 
+dbms  rdbms nosql
+
+1 database
+2 tables
+3 view
+4 trigger --> table / view (??) 
+5 procedures / stored procedure --> sequence of steps which is compiled and kept
+6 cursors
+7 keys 
+8 functions
+9 index
+
+
+1,2,7,9 -->
+PK
+CRUD
+
+
+*******************************************************************************
+Day 8 --> 
+*******************************************************************************
+
+C# new features
+implicitly typed local variables - var
+Dynamic
+AutomaticProperties
+anonymous types
+collection and object initializer
+Extesnion Methods
+Lambda Expression
+LINQ
+
+
+select * from tablename 
+where<>
+join<>
+groupby<>
+having<>
+orderby<>
+
+http://www.tutorialsteacher.com/linq/what-is-linq
+
+
+Leave Management System -->
+
+usertable
+userid(pk)
+username
+password
+mobilenumber
+emailid
+address
+typeofuser
+dept
+totalnoofPlleave
+totalnoofsickleave
+totalnoofcarryforward
+
+leaveinfotable -->
+leaveid(PK)
+userid(FK)
+fromdate
+todate
+nooddays
+description
+leavestatus -->
+typeofleave -->
+
+UI --> enum
+datbase bit ( 0 to 9) 
+char[2]
+
+
+
+
+
+
+.Net Framework 3.0
+Windows Presentation Foundation (WPF) --> Geometric, Vector Manipulation, Graphics,
+WPF for web is called as Silverlight.
+Windows Communication Foundation (WCF) -> Enhancements to Web services. Ws* Standard by W3C 
+Windows Workflow Foundation (WWF) > Diagramatic representation of Business Logic.
+Windows Card Space (WCS)
+
+.Net Framework 3.5 Features
+Auto Implemented properties
+Implicit Typed local variable var
+Anonymous Types
+Extension Methods (3.5 new feature)
+Object and Collection Initializers
+Lambda Expressions
+LINQ
+
+.Net Framework 4.0 Features
+BigInteger and Complex Numbers
+Tuples  -->A tuple is a data structure that provides an easy way to represent a single set of data. The System.Tuple class provides static methods to create tuple objects.
+var author = new Tuple<string, string, int>();
+Covariance and Contravariance
+Dynamic Language Runtime - Dynamic
+Parallel Computing
+
+.Net Framework 4.5 Features
+
+.NET for Windows Store Apps
+Core New Features and Improvements
+
+
+
+*******************************************************************************
+Day 9 --> 
+*******************************************************************************
+Single Document Interface-->
+Multiple Document Interface --> MDI
+
+
+Dialog Box -->  Modal Dialog Box
+Modeless Dialog Box
+
+
+*******************************************************************************
+Day 10 --> 
+*******************************************************************************
+
+ActiveX Data Object.NET (ADO.NET) is a software library in the .NET framework consisting of software components providing data access services.
+
+
+
+Insert, Update and Delete --> Connected Architecture
+
+Select Statement -->
+Connected Architecture 		 Vs  Dis Connected Architecture -->
+Always Connected to DB.     	 Not Connected Full time
+
+
+Implemented using DataReader.    Dataset & Data Adapter
+Single Directional.Forward Only. Linq to Dataset.So any direction
+One row at a time.               Bulk Select
+Performance is bad.              Performance is good.
+Will get the latest Data.   	 Data might be old
+
+xxxDataReader			  DataSet
+				  xxxConnection
+				  xxxCommand
+				  xxxDataAdapter
+
+Bulk Insert, Bulk Update and Bulk Delete --> Dis Connected Architecture
+
+
+A transaction is a single unit of work. If a transaction is successful, all of the data modifications made during the transaction are committed and become a permanent part of the database. If a transaction encounters errors and must be canceled or rolled back, then all of the data modifications are erased
+
+
+//select
+string connectionstringtodatabase = "Data Source=.;Initial Catalog=studentAnushka;Integrated Security=True";
+            DataSet ds = new DataSet();
+            using (SqlConnection cn = new SqlConnection(connectionstringtodatabase))
+            {
+                cn.Open();
+                using(SqlCommand cmd = new SqlCommand())
+                {
+                    cmd.Connection = cn;
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.CommandText = "selectStudent";
+                    using(SqlDataAdapter da = new SqlDataAdapter())
+                    {
+                        da.SelectCommand = cmd;
+                        da.Fill(ds);
+                    }
+                }
+            }
+
+//insert, update and delete
+ string connectionstringtodatabase = "Data Source=.;Initial Catalog=studentAnushka;Integrated Security=True";
+            using (SqlConnection cn = new SqlConnection(connectionstringtodatabase))
+            {
+                cn.Open();
+                using (SqlCommand cmd = new SqlCommand())
+                {
+                    cmd.Connection = cn;
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.CommandText = "InsertIntoStudent";
+                    cmd.Parameters.AddWithValue("@ID", txtStudentId.Text);
+                    cmd.Parameters.AddWithValue("@Name", txtStudentName.Text);
+                    cmd.Parameters.AddWithValue("@Address", txtStudentAddress.Text);
+                    int result = cmd.ExecuteNonQuery();
+                    if(result>0)
+                    {
+                        DisplayStudentInfo();
+                    }
+                }
+            }
+
+//for insert update and delete
+xxxConnection
+xxxCommand
+
+//select
+xxxConnection
+xxxCommand
+xxxDataAdapter(dis connected architecture) & DataSet
+ vs 
+xxxDataReader (Connected architecture)
+
+
+
+connected architecture -->
+read 1 row at a time
+
+*******************************************************************************
+Day 11 --> 
+*******************************************************************************
+
+Windows Service
+installutil.exe LoadCatalogService.exe
+installutil.exe -u LoadCatalogService.exe
+
+*******************************************************************************
+Day 12 --> 
+*******************************************************************************
+
+What is POP3 and which are the default POP3 ports
+
+Post Office Protocol version 3 (POP3) is a standard mail protocol used to receive emails from a remote server to a local email client. POP3 allows you to download email messages on your local computer and read them even when you are offline. 
+
+By default, the POP3 protocol works on two ports:
+
+    Port 110 - this is the default POP3 non-encrypted port
+    Port 995 - this is the port you need to use if you want to connect using POP3 securely
+
+What is IMAP and which are the default IMAP ports
+The Internet Message Access Protocol (IMAP) is a mail protocol
+used for accessing email on a remote web server from a local client. IMAP and POP3 are the two most commonly used Internet mail protocols for retrieving emails. Both protocols are supported by all modern email clients and web servers.
+
+    Port 143 - this is the default IMAP non-encrypted port
+    Port 993 - this is the port you need to use if you want to connect using IMAP securely
+
+
+What is SMTP and which are the default SMTP ports
+Simple Mail Transfer Protocol (SMTP) is the standard protocol 
+for sending emails across the Internet.
+
+By default, the SMTP protocol works on three ports:
+    
+    Port 465 - this is the port used if you want to send messages using SMTP securely
+
+Yahoo: IMAP, POP3, and SMTP settings
+
+IMAP
+Server: imap.mail.yahoo.com
+SSL: true-implicit
+Port: 993 (default)
+imap.gmail.com
+
+POP3
+Server: pop.mail.yahoo.com
+SSL: true-implicit
+Port: 995 (default)
+pop.gmail.com
+
+SMTP
+Server: smtp.mail.yahoo.com
+Port: 587 (default) / 465 (default)
+
+smtp.gmail.com
+
+SMTP, POP3 and IMAP are TCP/IP protocols used for mail delivery. 
+If you plan to set up an email server such as hMailServer, 
+you must know what they are used for. 
+Each protocol is just a specific set of communication rules between 
+computers.
+
+SMTP
+
+SMTP stands for Simple Mail Transfer Protocol. 
+SMTP is used when email is delivered from an email client, 
+such as Outlook Express, to an email server or when email is delivered 
+from one email server to another. 
+SMTP uses port 25.
+POP3
+
+POP3 stands for Post Office Protocol. 
+POP3 allows an email client to download an email from an email server. 
+The POP3 protocol is simple and does not offer many features 
+except for download. Its design assumes that the email client 
+downloads all available email from the server, deletes them from the 
+server and then disconnects. POP3 normally uses port 110.
+
+IMAP
+
+IMAP stands for Internet Message Access Protocol. 
+IMAP shares many similar features with POP3. 
+It, too, is a protocol that an email client can use to 
+download email from an email server. 
+However, IMAP includes many more features than POP3. 
+The IMAP protocol is designed to let users keep their email on the server.
+ IMAP requires more disk space on the server and more CPU 
+resources than POP3, as all emails are stored on the server. 
+IMAP normally uses port 143. Here is more information about IMAP.
+
+
+*******************************************************************************
+
+Code to Generate Captcha
+https://code.msdn.microsoft.com/windowsapps/Captcha-for-Windows-c5ea873c
+https://www.codeproject.com/Articles/99148/Simple-CAPTCHA-Create-Your-Own-in-Csharp
+
+
+Entity framework is an Object Relational Mapping (ORM) framework 
+that offers an automated mechanism to developers for storing 
+and accessing the data in the database. 
+
+
+
+*******************************************************************************
+Day 13 --> 
+*******************************************************************************
+
+Http vs https  (ssl) 
+StartTLS
+
+http  80
+https  443
+
+
+
+
+http protocol uses un encrypted english language to communicate.
+
+Secure Sockets Layer (SSL) is a cryptographic protocol that enables secure communications over the Internet. ... Transport Layer Security (TLS) is the successor to SSL
+
+
+Symmetric vs. Asymmetric Systems. Recall that there are two basic types of encryption: symmetric algorithms: (also called “secret key”) use the same key for both encryption and decryption; asymmetric algorithms: (also called “public key”) use different keys for encryption and decryption
+
+Https uses Asymmetric  encryption.
+
+1 private key will have 1 or many public keys
+
+
+DNS --> The domain name system (DNS) is the way that internet domain names are located and translated into internet protocol (IP) addresses. The domain name system maps the name people use to locate a website to the IP address that a computer uses to locate a website.
+
+
+
+*******************************************************************************
+Day 14 --> 
+*******************************************************************************
+
+http://localhost/myfirstwebapp/default.aspx --> accessible only in the machine where code is hosted in iss.
+
+https://localhost/myfirstwebapp/default.aspx
+
+http://10.184.46.30/myfirstwebapp/default.aspx
+http://acts-pc/myfirstwebapp/default.aspx
+
+
+http protocol --> Hypertext Transport Protocol 
+80 / 443(https) 
+1 client-server protocol
+2 request-response protocol
+request-response is in english. reponse contains html (output which the browser displayes to user)
+3 stateless protocol -->
+
+
+Client is browser and it understands Html / css /  Javascript.
+
+server is IIS in dot net and it process the http request on port 80 or port 443 and gives a resposne in the form of html.
+
+
+For every request you will get a reponse compulsorly.
+http request is from browser to server(dns) 
+
+and httpresposne is from webserver or dns to browser. and a hhtp status code is also sent.
+
+status codes 
+Http Status Code -->
+1xx Informational response
+2xx Success
+3xx Redirection
+4xx Client errors
+5xx Server errors
+
+*******************************************************************************
+Day 15 --> 
+*******************************************************************************
+
+
+State management 
+
+Client side --> Browser in client side
+Request
+querystring -->
+Adv - Simple easy to pass in url.
+Dis Adv --> easy to manipulate, limitations of browser 
+2,083 characters, all values are consired as string. 
+doesnt expire
+No complex Datastructures can be used.only string is supported
+hidden.
+viewstate
+cookie
+
+Server Side -->
+httpcontext
+profile
+application
+Session --> It pertains to user and per browser
+Cache --> is common to all users
+
+https://www.google.com/search?q=23/10/2012an&key=value
+
+
+
+
+
+State Management Techniques -->
+client side   --> browser      
+1)hidden variable --> are html controls which is not visible to user and can store text values.
+2) viewstate --> all asp.net controls state is saved and maintained by the viewstate object which is implemented as a hidden variable.
+
+3)  *****  query string --> URL 
+adv--> Simple
+Dis adv --> Not secure, max length = 2000,
+transfer only promitive data
+4)form variable --> All html controls or dot net controls within the form tag(runat=server") will be posted to server
+5)***  cookies -->
+
+Query String --.
+Advantages --> simple to use.saved as url by appending the contents.
+Disadvatages --> you cannot have & as part of the text you enter
+Space Limitation  -->2083 
+Security
+Datatype
+
+A cookie is a small bit of text that accompanies requests and pages as they go between the Web server and browser. The cookie contains information the Web application can read whenever the user visits the site.
+
+
+server Side-->
+session
+1)cache --> stores info in common
+2)profile
+3)application --> stores info in common
+4)*****SESSION --> stores info per user
+https://www.redbus.in/
+
+https://www.redbus.in/search?fromCityName=Chennai&fromCityId=123&toCityName=Bangalore&toCityId=122&onward=10-Jan-2019&return=31-Jan-2019&opId=0&busType=Any
+
+http://localhost/myfirstwebapp/HomePage.aspx?username=aaa&userid=100
+
+*******************************************************************************
+Day 16 --> 
+*******************************************************************************
+
+http://docwiki.embarcadero.com/RADStudio/Tokyo/en/Language_Culture_Names,_Codes,_and_ISO_Values
+en-In  English - India
+
+en-US  English - United States
+hi-IN 
+mr-IN 
+pa-IN
+sa-IN
+ta-IN
+te-IN
+gu-IN
+
+
+CDacBus Ticket Booking System --> Db Design
+
+table 1 --> citytable
+int cityid pk
+varchar(100) cityname 
+ 1000  Chennai
+ 1010  Bangalore
+ 1020  Hyderabad
+
+Table 2 --> userdetails
+int userid PK
+varchar(100) username
+varchar(100) password
+varchar(100) mobileno  
+varchar(100) emailid
+ 
+2000   abc   abc   123  123@gmail.com
+
+Table 3-->busdetails
+int busdetailsid PK
+varchar(100) travelsname
+varchar(100) typeof
+int sourcecityid  FK
+int destinationcityid FK
+3000  Sharma AC-Volvo 1000 1020
+
+OrderHEader and OrderDetials
+Table 4 --> TicketBookingHeader
+int TicketBookingHeaderid PK
+int userid FK
+int busdetailsid FK
+int totalfare 
+int Noofpassenger
+datetime dateofjourney
+
+
+5000 2000 3000 7500  3  10/12/2018
+
+Table 5 --> TicketBookingDetails
+int TicketBookingDetailsid PK
+int TicketBookingHeaderid FK
+varchar(100) passengername
+int passengerage
+varchar(100) passengerIDProof
+varchar(100) passengerIDProofType
+char SexOfUSer
+int SeatNumber
+
+7500  5000    aaaa   25  AAasasfd  PAN       M  25
+7501  5000    bbbb   58  1258622   AAdhar    F  26
+7502  5000    cccc   10   qqwqqwe  Voters Id M  27
+
+
+*******************************************************************************
+Day 17 --> 
+*******************************************************************************
+
+Asp.Net Themes, Sliks, Globalization
+
+
+AJAX stands for Asynchronous JavaScript and XML. AJAX is a new technique for creating better, faster, and more interactive web applications with the help of XML, HTML, CSS, and Java Script. Ajax uses XHTML for content, CSS for presentation, along with Document Object Model and JavaScript for dynamic content display.
+
+A browser built-in XMLHttpRequest object (to request data from a web server)
+JavaScript and HTML DOM (to display or use the data)

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Invoice>
+	<Timestamp>1/1/2017 00:01</Timestamp>
+	<CustNumber>12345</CustNumber>
+	<AcctNumber>54321</AcctNumber>
+</Invoice>

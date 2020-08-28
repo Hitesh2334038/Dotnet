@@ -1,0 +1,1 @@
+﻿<%@ WebService Language="C#" CodeBehind="TempCon.asmx.cs" Class="TemperatureConversion.Service1" %>

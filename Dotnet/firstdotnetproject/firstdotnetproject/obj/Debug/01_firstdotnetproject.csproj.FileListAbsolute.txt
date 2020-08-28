@@ -1,0 +1,7 @@
+D:\Dotnet\firstdotnetproject\firstdotnetproject\bin\Debug\firstdotnetproject.exe.config
+D:\Dotnet\firstdotnetproject\firstdotnetproject\bin\Debug\firstdotnetproject.exe
+D:\Dotnet\firstdotnetproject\firstdotnetproject\bin\Debug\firstdotnetproject.pdb
+D:\Dotnet\firstdotnetproject\firstdotnetproject\obj\Debug\01_firstdotnetproject.csprojAssemblyReference.cache
+D:\Dotnet\firstdotnetproject\firstdotnetproject\obj\Debug\01_firstdotnetproject.csproj.CoreCompileInputs.cache
+D:\Dotnet\firstdotnetproject\firstdotnetproject\obj\Debug\firstdotnetproject.exe
+D:\Dotnet\firstdotnetproject\firstdotnetproject\obj\Debug\firstdotnetproject.pdb

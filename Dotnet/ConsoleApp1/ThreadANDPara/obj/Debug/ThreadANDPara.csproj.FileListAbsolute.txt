@@ -1,0 +1,6 @@
+D:\Dotnet\ConsoleApp1\ThreadANDPara\bin\Debug\ThreadANDPara.exe.config
+D:\Dotnet\ConsoleApp1\ThreadANDPara\bin\Debug\ThreadANDPara.exe
+D:\Dotnet\ConsoleApp1\ThreadANDPara\bin\Debug\ThreadANDPara.pdb
+D:\Dotnet\ConsoleApp1\ThreadANDPara\obj\Debug\ThreadANDPara.csproj.CoreCompileInputs.cache
+D:\Dotnet\ConsoleApp1\ThreadANDPara\obj\Debug\ThreadANDPara.exe
+D:\Dotnet\ConsoleApp1\ThreadANDPara\obj\Debug\ThreadANDPara.pdb

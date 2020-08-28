@@ -1,0 +1,7 @@
+D:\Dotnet\ConsoleApp1\linq3\bin\Debug\linq3.exe.config
+D:\Dotnet\ConsoleApp1\linq3\bin\Debug\linq3.exe
+D:\Dotnet\ConsoleApp1\linq3\bin\Debug\linq3.pdb
+D:\Dotnet\ConsoleApp1\linq3\obj\Debug\linq3.csprojAssemblyReference.cache
+D:\Dotnet\ConsoleApp1\linq3\obj\Debug\linq3.csproj.CoreCompileInputs.cache
+D:\Dotnet\ConsoleApp1\linq3\obj\Debug\linq3.exe
+D:\Dotnet\ConsoleApp1\linq3\obj\Debug\linq3.pdb

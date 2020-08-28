@@ -1,0 +1,10 @@
+D:\Dotnet\ConsoleApp1\xml to json\bin\Debug\xml to json.exe.config
+D:\Dotnet\ConsoleApp1\xml to json\bin\Debug\xml to json.exe
+D:\Dotnet\ConsoleApp1\xml to json\bin\Debug\xml to json.pdb
+D:\Dotnet\ConsoleApp1\xml to json\bin\Debug\Newtonsoft.Json.dll
+D:\Dotnet\ConsoleApp1\xml to json\bin\Debug\Newtonsoft.Json.xml
+D:\Dotnet\ConsoleApp1\xml to json\obj\Debug\xml to json.csprojAssemblyReference.cache
+D:\Dotnet\ConsoleApp1\xml to json\obj\Debug\xml to json.csproj.CoreCompileInputs.cache
+D:\Dotnet\ConsoleApp1\xml to json\obj\Debug\xml to json.csproj.CopyComplete
+D:\Dotnet\ConsoleApp1\xml to json\obj\Debug\xml to json.exe
+D:\Dotnet\ConsoleApp1\xml to json\obj\Debug\xml to json.pdb

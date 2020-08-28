@@ -1,0 +1,71 @@
+1 select multiple rows and columns(disconnected architecture)
+uses --> Login Screen,To select multiple information
+ 		DataSet ds = new DataSet();
+		using (SqlConnection cn = new SqlConnection("Data Source=acts-pc;Initial Catalog=LiabraryManagement;Integrated Security=True"))
+                {
+                    cn.Open();
+                    using (SqlCommand cmd = new SqlCommand())
+                    {
+                        cmd.Connection = cn;
+                        cmd.CommandType = CommandType.StoredProcedure;
+                        cmd.CommandText = "spReturnBooksIssuedToUSer";
+                        cmd.Parameters.AddWithValue("@LibraryUserid", LoggedinUserID);
+                        using (SqlDataAdapter da = new SqlDataAdapter())
+                        {
+                            da.SelectCommand = cmd;
+                            da.Fill(ds);
+                        }
+                    }
+                }
+2 Select one row and one column
+		using (SqlConnection cn = new SqlConnection("Data Source=acts-pc;Initial Catalog=LiabraryManagement;Integrated Security=True"))
+                {
+                    cn.Open();
+                    using (SqlCommand cmd = new SqlCommand())
+                    {
+                        cmd.Connection = cn;
+                        cmd.CommandType = CommandType.StoredProcedure;
+                        cmd.CommandText = "spinsertintolibraryuser";
+                        cmd.Parameters.AddWithValue("@UserName", txtUsername.Text.Trim());
+                         int firstrowfirstcolumn = int.Parse(cmd.ExecuteScalar().ToString());
+                    }
+                }
+
+3 Insert/update and delete
+		using (SqlConnection cn = new SqlConnection("Data Source=acts-pc;Initial Catalog=LiabraryManagement;Integrated Security=True"))
+                {
+                    cn.Open();
+                    using (SqlCommand cmd = new SqlCommand())
+                    {
+                        cmd.Connection = cn;
+                        cmd.CommandType = CommandType.StoredProcedure;
+                        cmd.CommandText = "spinsertintolibraryuser";
+                        cmd.Parameters.AddWithValue("@UserName", txtUsername.Text.Trim());
+                         int numberOfrowsAffected = cmd.ExecuteNonQuery();
+                    }
+                }
+
+4 select 1 row at a time using Connected Architecture
+		using (SqlConnection cn = new SqlConnection("Data Source=acts-pc;Initial Catalog=LiabraryManagement;Integrated Security=True"))
+                {
+                    cn.Open();
+                    using (SqlCommand cmd = new SqlCommand())
+                    {
+                        cmd.Connection = cn;
+                        cmd.CommandType = CommandType.StoredProcedure;
+                        cmd.CommandText = "spinsertintolibraryuser";
+                        cmd.Parameters.AddWithValue("@UserName", txtUsername.Text.Trim());
+                         SqlDataReader dr = cmd.ExecuteReader();
+                    }
+                }
+
+yyyConnection
+yyyCommand
+yyyDataAdapter
+yyyDataReader
+yyyTransaction
+yyy --> 
+Sql
+Oracle
+OLEDB
+ODBC

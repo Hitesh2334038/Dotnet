@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="2921092f373f4cc3b1703a7e2c0d1ce4" Name="Diagram1">
+        <EntityTypeShape EntityType="Dec26_SimpleLMSModel.sysdiagram" Width="1.5" PointX="2.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Dec26_SimpleLMSModel.tbl_bookIssueReturn" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="Dec26_SimpleLMSModel.tbl_Catalog" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="Dec26_SimpleLMSModel.tbl_LibraryUser" Width="1.5" PointX="0.75" PointY="5" IsExpanded="true" />
+        <AssociationConnector Association="Dec26_SimpleLMSModel.FK_tbl_bookIssueReturn_tbl_Catalog" ManuallyRouted="false" />
+        <AssociationConnector Association="Dec26_SimpleLMSModel.FK_tbl_bookIssueReturn_tbl_LibraryUser" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

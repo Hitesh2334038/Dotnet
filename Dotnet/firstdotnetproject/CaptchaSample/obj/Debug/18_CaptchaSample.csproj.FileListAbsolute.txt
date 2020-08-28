@@ -1,0 +1,10 @@
+D:\Dotnet\firstdotnetproject\CaptchaSample\bin\Debug\CaptchaSample.exe.config
+D:\Dotnet\firstdotnetproject\CaptchaSample\bin\Debug\CaptchaSample.exe
+D:\Dotnet\firstdotnetproject\CaptchaSample\bin\Debug\CaptchaSample.pdb
+D:\Dotnet\firstdotnetproject\CaptchaSample\obj\Debug\18_CaptchaSample.csprojAssemblyReference.cache
+D:\Dotnet\firstdotnetproject\CaptchaSample\obj\Debug\CaptchaSample.Form1.resources
+D:\Dotnet\firstdotnetproject\CaptchaSample\obj\Debug\CaptchaSample.Properties.Resources.resources
+D:\Dotnet\firstdotnetproject\CaptchaSample\obj\Debug\18_CaptchaSample.csproj.GenerateResource.cache
+D:\Dotnet\firstdotnetproject\CaptchaSample\obj\Debug\18_CaptchaSample.csproj.CoreCompileInputs.cache
+D:\Dotnet\firstdotnetproject\CaptchaSample\obj\Debug\CaptchaSample.exe
+D:\Dotnet\firstdotnetproject\CaptchaSample\obj\Debug\CaptchaSample.pdb

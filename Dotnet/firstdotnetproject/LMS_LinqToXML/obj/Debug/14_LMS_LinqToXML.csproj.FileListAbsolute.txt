@@ -1,0 +1,10 @@
+D:\Dotnet\firstdotnetproject\LMS_LinqToXML\bin\Debug\LMS_LinqToXML.exe.config
+D:\Dotnet\firstdotnetproject\LMS_LinqToXML\bin\Debug\LMS_LinqToXML.exe
+D:\Dotnet\firstdotnetproject\LMS_LinqToXML\bin\Debug\LMS_LinqToXML.pdb
+D:\Dotnet\firstdotnetproject\LMS_LinqToXML\obj\Debug\14_LMS_LinqToXML.csprojAssemblyReference.cache
+D:\Dotnet\firstdotnetproject\LMS_LinqToXML\obj\Debug\LMS_LinqToXML.Form1.resources
+D:\Dotnet\firstdotnetproject\LMS_LinqToXML\obj\Debug\LMS_LinqToXML.Properties.Resources.resources
+D:\Dotnet\firstdotnetproject\LMS_LinqToXML\obj\Debug\14_LMS_LinqToXML.csproj.GenerateResource.cache
+D:\Dotnet\firstdotnetproject\LMS_LinqToXML\obj\Debug\14_LMS_LinqToXML.csproj.CoreCompileInputs.cache
+D:\Dotnet\firstdotnetproject\LMS_LinqToXML\obj\Debug\LMS_LinqToXML.exe
+D:\Dotnet\firstdotnetproject\LMS_LinqToXML\obj\Debug\LMS_LinqToXML.pdb
